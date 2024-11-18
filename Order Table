@@ -1,0 +1,8 @@
+CREATE TABLE Order_Entity (
+    Order_ID NUMBER PRIMARY KEY,
+    C_ID NUMBER,
+    Name VARCHAR2(200),
+    Payment_status VARCHAR2(20),
+    Total_Amount NUMBER(10,2),
+    FOREIGN KEY (C_ID) REFERENCES Customer(C_ID)
+);
