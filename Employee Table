@@ -1,0 +1,10 @@
+CREATE TABLE Employee (
+    E_ID NUMBER PRIMARY KEY,
+    First_Name VARCHAR2(200),
+    Last_Name VARCHAR2(200),
+    Hire_Date DATE,
+    Salary NUMBER(8,2),
+    Position VARCHAR2(20),
+    Email VARCHAR2(100),
+    Phone VARCHAR2(15)
+);
