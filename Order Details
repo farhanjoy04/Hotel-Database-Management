@@ -1,0 +1,9 @@
+CREATE TABLE Order_Details (
+    Order_ID NUMBER,
+    F_ID NUMBER,
+    Quantity NUMBER,
+    Sub_total NUMBER(8,2),
+    PRIMARY KEY (Order_ID, F_ID),
+    FOREIGN KEY (Order_ID) REFERENCES Order_Entity(Order_ID),
+    FOREIGN KEY (F_ID) REFERENCES Food_Menu(F_ID)
+);
