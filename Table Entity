@@ -1,0 +1,6 @@
+CREATE TABLE Table_Entity (
+    Table_ID NUMBER PRIMARY KEY,
+    Capacity NUMBER(3),
+    Location VARCHAR2(250),
+    Status VARCHAR2(20)
+);
