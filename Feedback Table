@@ -1,0 +1,12 @@
+CREATE TABLE Invoice (
+    Invoice_ID NUMBER PRIMARY KEY,
+    C_ID NUMBER,
+    Order_ID NUMBER,
+    Discount NUMBER(8,2),
+    Total_amount NUMBER(10,2),
+    Grand_total NUMBER(10,2),
+    Tax NUMBER(8,2),
+    Payment_Type VARCHAR2(20),
+    FOREIGN KEY (C_ID) REFERENCES Customer(C_ID),
+    FOREIGN KEY (Order_ID) REFERENCES Order_Entity(Order_ID)
+);
