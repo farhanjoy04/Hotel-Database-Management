@@ -1,0 +1,11 @@
+CREATE TABLE Reservation (
+    Reservation_ID NUMBER PRIMARY KEY,
+    C_ID NUMBER,
+    Table_ID NUMBER,
+    Reservation_date DATE,
+    Reservation_time TIMESTAMP,
+    No_of_Guests NUMBER(3),
+    Status VARCHAR2(20),
+    FOREIGN KEY (C_ID) REFERENCES Customer(C_ID),
+    FOREIGN KEY (Table_ID) REFERENCES Table_Entity(Table_ID)
+);
