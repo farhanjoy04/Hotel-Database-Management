@@ -1,0 +1,8 @@
+CREATE TABLE Customer (
+    C_ID NUMBER PRIMARY KEY,
+    First_Name VARCHAR2(100),
+    Last_Name VARCHAR2(100),
+    Address VARCHAR2(255),
+    Email VARCHAR2(100),
+    Phone_no VARCHAR2(15)
+);
